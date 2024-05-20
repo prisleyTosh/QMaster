@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+header {
+    padding: 30px;	
+    text-align: center;
+    background: green;
+    color: white;
+}
+header h1 {
+    font-size: 40px;
+}
+nav {
+    width: 100%;
+    background-color: rgb(39, 39, 39);
+    overflow: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+nav a {
+    text-align: center;
+    padding: 14px;
+    color: rgb(178, 137, 253);
+    text-decoration: none;
+    font-size: 17px;
+    border-bottom: none;
+    padding: 14px;
+    margin: 0 10px;
+}
+nav a:hover {
+    background-color: rgb(59, 59, 59);
+}
+main {
+    padding: 20px;
+}
+footer {
+    padding: 10px;
+    text-align: center;
+    background: green;
+    color: white;
+}
+@media (max-width: 830px) {
+    header, nav, main, footer {
+        width: 100%;
+    }
+    nav a {
+        display: block;
+    }
+}
+main section {
+    margin-bottom: 20px; /* Add some space between sections */
+    padding-bottom: 20px; /* Add some space inside each section */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); /* Box shadow at the bottom */
+}
